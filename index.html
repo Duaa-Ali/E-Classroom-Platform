@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <!-- <video autoplay loop muted width="320" height="240">
+        <source src="imgs/7btrrd.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video> -->
+      <div class="sidebar bg-theme p-20 p-relative">
+        <h3 class="p-relative txt-c mt-0">Duaa Ali</h3>
+        <ul>
+          <li>
+            <a class="active d-flex align-center fs-14 rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 rad-6 p-10" href="profile.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 rad-6 p-10" href="projects.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 rad-6 p-10" href="courses.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 rad-6 p-10" href="faculty.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Faculty</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head bg-theme p-15 between-flex">
+          <div class="search p-relative">
+            <input class="p-10" type="search" placeholder="Search Course" />
+          </div>
+          <div class="icons d-flex align-center">
+            <span class="notification p-relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+              <div class="notification-content" style="color: black;">
+                <ul>
+                  <li>New comment </li>
+                  <li>new follower</li>
+                </ul>
+              </div>
+            </span>
+            <a href="profile.html"> <!-- Link to the profile page -->
+              <img src="imgs/avatar.png" alt="Profile" />
+            </a>
+          </div>
+        </div>
+        <!-- End Head -->
+        <h1 class="p-relative">Dashboard</h1>
+        <div class="wrapper d-grid gap-20">
+          <!-- Start Welcome Widget -->
+          <div class="welcome bg-theme rad-10 txt-c-mobile block-mobile">
+            <div class="intro p-20 d-flex space-between">
+              <div>
+                <h2 class="m-0">Welcome</h2>
+                <p class="c-white mt-5">Duaa</p>
+              </div>
+              <img class="hide-mobile" src="imgs/welcome2.png" alt="welcome" />
+            </div>
+            <img src="imgs/avatar.png" alt="avatar" class="avatar" />
+            <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+              <div>Duaa<span class="d-block c-white fs-14 mt-10">User</span></div>
+              <div>80/100 <span class="d-block c-white fs-14 mt-10">Marks</span></div>
+              <div>3 <span class="d-block c-white fs-14 mt-10">Assignments Due</span></div>
+            </div>
+            <a href="profile.html" class="visit btn d-block fs-14 w-fit">Profile</a>
+          </div>
+          <!-- End Welcome Widget -->
+          <!-- Start Quick Draft Widget -->
+          <div class="quick-draft bg-theme p-20 rad-10">
+            <h2 class="mt-0 mb-10">Notes</h2>
+            <p class="mt-0 mb-20 c-white fs-15">Note down your ideas!</p>
+            <form>
+              <input class="d-block mb-20 w-full p-10 b-none rad-6" type="text" placeholder="Title" />
+              <textarea class="d-block mb-20 w-full p-10 b-none rad-6" placeholder="Your Note"></textarea>
+              <input class="save btn d-block fs-14 b-none w-fit" type="submit" value="Save" />
+            </form>
+          </div>
+          <!-- End Quick Draft Widget -->
+          <!-- Start Ticket Widget -->
+          <div class="tickets bg-theme p-20  rad-10">
+            <h2 class="mt-0 mb-10">Semester Statistics</h2>
+            <p class="mt-0 mb-20 c-white fs-15">Your semester Statistics</p>
+            <div class="d-flex txt-c gap-20 f-wrap">
+              <div class="box p-20 rad-10 fs-13 c-white">
+                <i class="fa-regular fa-rectangle-list fa-2x mb-10 white-color"></i>
+                <span class="d-block fw-bold fs-25 mb-5 c-white">20</span>
+                Total
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-white">
+                <i class="fa-solid fa-spinner fa-2x mb-10 white-color"></i>
+                <span class="d-block fw-bold fs-25 mb-5 c-white">05</span>
+                Pending
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-white">
+                <i class="fa-regular fa-circle-check fa-2x mb-10 white-color"></i>
+                <span class="d-block fw-bold fs-25 mb-5 c-white">15</span>
+                Completed
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-white">
+                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 white-color"></i>
+                <span class="d-block fw-bold fs-25 mb-5 c-white">00</span>
+                Unsubmitted
+              </div>
+            </div>
+          </div>
+          <!-- End Ticket Widget -->
+          <!-- Start Latest News Widget -->
+          <div class="latest-news bg-theme p-20 rad-10 txt-c-mobile">
+            <h2 class="mt-0 mb-20">Latest Announcements</h2>
+            <div class="news-row d-flex align-center">
+              <img src="imgs/news-01.jpg" alt="new" />
+              <div class="info">
+                <h3>Project Overview</h3>
+                <p class="m-0 fs-14 c-white">Sir Mubeen uploaded</p>
+              </div>
+              <div class="fs-13 label c-white">3 Hours Ago</div>
+            </div>
+            <div class="news-row d-flex align-center">
+              <img src="imgs/news-02.jpg" alt="news" />
+              <div class="info">
+                <h3>Game development</h3>
+                <p class="m-0 fs-14 c-white">Sir Ali Mobin posted an announcement</p>
+              </div>
+              <div class="fs-13 label c-white">1 Day Ago</div>
+            </div>
+            <div class="news-row d-flex align-center">
+              <img src="imgs/news-03.jpg" alt="news" />
+              <div class="info">
+                <h3>Test 2 Marks uploaded</h3>
+                <p class="m-0 fs-14 c-white">Sir Usama graded your test</p>
+              </div>
+              <div class="fs-13 label c-white">2 Days Ago</div>
+            </div>
+            <div class="news-row d-flex align-center">
+              <img src="imgs/news-04.png" alt="new" />
+              <div class="info">
+                <h3>Pakola UI revamped</h3>
+                <p class="m-0 fs-14 c-white">Sir Ali Mobin posted an announcement</p>
+              </div>
+              <div class="fs-13 label c-white">3 Days Ago</div>
+            </div>
+          </div>
+          <!-- End Latest News Widget -->
+          <!-- Start Tasks Widget -->
+          <div class="tasks bg-theme p-20 rad-10">
+            <h2 class="mt-0 mb-20">Latest Assignments</h2>
+            <div class="task-row between-flex">
+              <div class="info">
+                <h3 class="mt-0 mb-5 fs-15 white-color">Study for UI final</h3>
+                <p class="m-0 c-white">Use HTML, CSS, JS to design a webpage</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete c-white"></i>
+            </div>
+            <div class="task-row between-flex">
+              <div class="info">
+                <h3 class="mt-0 mb-5 fs-15 white-color">Make TBWS proposal presentation</h3>
+                <p class="m-0 c-white">FYP project proposal due soon</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete c-white"></i>
+            </div>
+            <div class="task-row between-flex">
+              <div class="info">
+                <h3 class="mt-0 mb-5 fs-15 white-color">Finish Project</h3>
+                <p class="m-0 c-white">Write the conclusion paragraph</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete c-white"></i>
+            </div>
+            <div class="task-row between-flex done">
+              <div class="info">
+                <h3 class="mt-0 mb-5 fs-15 white-color">Meet with Sir Ali Mobin</h3>
+                <p class="m-0 c-white">Attend the project meeting</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete c-white"></i>
+            </div>
+            <div class="task-row between-flex">
+              <div class="info">
+                <h3 class="mt-0 mb-5 fs-15 white-color">Techno sales report</h3>
+                <p class="m-0 c-white">Finish the report and submit</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete c-white"></i>
+            </div>
+          </div>
+          <!-- End Tasks -->
+          <!-- Start Reminders Widget -->
+          <div class="reminders bg-theme p-20 rad-10 p-relative">
+            <h2 class="mt-0 mb-25">Reminders</h2>
+            <ul class="m-0">
+              <li class="d-flex align-center mt-15">
+                <span class="key mr-15 d-block rad-half"></span>
+                <div class="pl-15">
+                  <p class="fs-14 fw-bold mt-0 mb-5 white-color">Check Tasks List</p>
+                  <span class="fs-13 c-white">28/09/2024 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-center mt-15">
+                <span class="key mr-15 d-block rad-half"></span>
+                <div class="pl-15">
+                  <p class="fs-14 fw-bold mt-0 mb-5 white-color">Check My Projects</p>
+                  <span class="fs-13 c-white">26/10/2024 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-center mt-15">
+                <span class="key mr-15 d-block rad-half"></span>
+                <div class="pl-15">
+                  <p class="fs-14 fw-bold mt-0 mb-5 white-color">Call Saada about project</p>
+                  <span class="fs-13 c-white">05/11/2024 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-center mt-15">
+                <span class="key mr-15 d-block rad-half"></span>
+                <div class="pl-15">
+                  <p class="fs-14 fw-bold mt-0 mb-5 white-color">Meeting with Tooba</p>
+                  <span class="fs-13 c-white">20/12/2022 - 12:00am</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- End Reminders Widget -->
+          <!-- Start Latest Post Widget -->
+          <div class="latest-post bg-theme p-20 rad-10 p-relative">
+            <h2 class="mt-0 mb-25">Latest Post</h2>
+            <div class="top d-flex align-center">
+              <img class="avatar mr-15" src="imgs/sir.png" alt="" />
+              <div class="info">
+                <span class="d-block mb-5 fw-bold white-color">Ali Mobin</span>
+                <span class="c-white">3 Hours Ago</span>
+              </div>
+            </div>
+            <div class="post-content txt-c-mobile pt-20 pb-20 mt-20 mb-20 c-white">
+              Ker roti khaindo?
+            </div>
+            <div class="post-stats between-flex c-white">
+              <div>
+                <i class="fa-regular fa-heart"></i>
+                <span class="white-color">14</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-comments"></i>
+                <span class="white-color">20</span>
+              </div>
+            </div>
+          </div>
+          <!-- End Latest Post Widget -->
+        </div>
+        <!-- Start Projects Table -->
+        <div class="projects bg-theme p-20 rad-10 m-20">
+          <h2 class="mt-0 mb-20">Projects</h2>
+          <div class="responsive-table">
+            <table class="fs-15 w-full c-white">
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Finish Date</td>
+                  <td>Course</td>
+                  <td>Team</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>UI Pakola revamped</td>
+                  <td>10 May 2024</td>
+                  <td>UI Design</td>
+                  <td>
+                    <img src="imgs/team-01.png" alt="" />
+                    <img src="imgs/team-02.png" alt="" />
+                    <img src="imgs/team-03.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="btn label c-white">Pending</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Boho Bazaar</td>
+                  <td>12 Oct 2024</td>
+                  <td>Technopreneurship</td>
+                  <td>
+                    <img src="imgs/team-01.png" alt="" />
+                  </td>
+                  <td><span class="btn label c-white">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Szabist Network</td>
+                  <td>05 Sep 2024</td>
+                  <td>CNDC</td>
+                  <td>
+                    <img src="imgs/team-02.png" alt="" />
+                  </td>
+                  <td><span class="btn label c-white">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>Supervised Learning</td>
+                  <td>22 May 2024</td>
+                  <td>AI</td>
+                  <td>
+                    <img src="imgs/team-01.png" alt="" />
+                    <img src="imgs/team-03.png" alt="" />
+                  </td>
+                  <td><span class="btn label c-white">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>Big Ben Model</td>
+                  <td>24 May 2025</td>
+                  <td>Game Development</td>
+                  <td><img src="imgs/team-03.png" alt="" />
+                  </td>
+                  <td><span class="btn label c-white">Rejected</span></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- End Projects Table -->
+      </div>
+    </div>    
+  </body>
+</html>
