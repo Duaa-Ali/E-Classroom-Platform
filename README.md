@@ -8,3 +8,5 @@ Keep track of their courses and related materials
 
 The platform aims to streamline the educational process and foster better communication between students and teachers.
 
+DEMO on:
+https://duaa-ali.github.io/E-Classroom-Platform/
